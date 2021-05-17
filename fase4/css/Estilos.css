@@ -1,0 +1,32 @@
+*{
+    margin: 5px;
+    border-radius: 3px;
+}
+header{
+    background-color: rgb(236, 233, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.justificado{
+    text-align: justify;
+}
+.centrado{
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .contenedor{
+        background-color: blue;
+    }
+    }
+    header{
+        flex-direction: column;/* coloca los elementos verticales. */
+        align-items: flex-start;
+        
+    }
